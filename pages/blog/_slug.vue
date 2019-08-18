@@ -1,6 +1,6 @@
 <template>
   <article class="container">
-    <p class="text-5xl">{{ post.title }}</p>
+    <p class="text-5xl font-bold text-orange-600 mb-8">{{ post.title }}</p>
     <p>{{ post.body }}</p>
   </article>
 </template>
