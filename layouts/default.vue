@@ -1,15 +1,19 @@
 <template>
-  <div>
+  <div class="font-sans">
+    <Nav />
     <nuxt />
   </div>
 </template>
 
-<style>
-.link {
-  @apply text-orange-600;
-}
+<script>
+import Nav from "@/components/Nav";
 
-.link:hover {
-  @apply underline;
-}
+export default {
+  components: {
+    Nav
+  }
+};
+</script>
+
+<style>
 </style>

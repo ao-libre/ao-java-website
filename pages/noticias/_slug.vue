@@ -11,16 +11,16 @@ export default {
     try {
       const post = await $axios.$get(
         `https://jsonplaceholder.typicode.com/posts/${params.slug}`
-      )
+      );
 
       return {
         post
-      }
+      };
     } catch (e) {
-      console.log(e)
+      console.log(e);
     }
   }
-}
+};
 </script>
 
 <style>
