@@ -1,7 +1,10 @@
 <template>
-  <nav class="fixed top-0 w-full mt-8">
+  <nav class="fixed top-0 w-full bg-secondary py-3">
+    <div class="separador absolute bottom-0"></div>
     <div class="container flex items-center justify-between">
-      <img src="../assets/logo.png" alt="logo Finisterra" />
+      <nuxt-link to="/">
+        <img src="../assets/logo.png" alt="logo Finisterra" />
+      </nuxt-link>
       <ul class="flex items-center">
         <li>
           <nuxt-link to="/">Inicio</nuxt-link>
@@ -22,8 +25,12 @@ export default {};
 </script>
 
 <style>
-nav a {
-  @apply text-gray-500 uppercase tracking-wide mx-4;
+nav li a {
+  @apply text-gray-500 uppercase tracking-wide p-4;
+}
+
+nav li a:hover {
+  @apply text-white;
 }
 
 nav .nuxt-link-exact-active {

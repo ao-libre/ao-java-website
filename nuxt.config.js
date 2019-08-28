@@ -18,9 +18,10 @@ module.exports = {
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css?family=Cinzel:400,700|PT+Sans&display=swap"
+          "https://fonts.googleapis.com/css?family=Cinzel:400,700|Livvic&display=swap"
       }
-    ]
+    ],
+    script: [{ src: "https://kit.fontawesome.com/63657e4863.js" }]
   },
 
   /*

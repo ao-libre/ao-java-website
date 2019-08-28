@@ -2,7 +2,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#FFA800"
+        primary: "var(--primary)",
+        secondary: "var(--secondary)"
       }
     },
     container: {
@@ -10,8 +11,8 @@ module.exports = {
       padding: "1rem"
     },
     fontFamily: {
-      sans: ["'PT Sans'"],
-      serif: ["'Cinzel'"]
+      sans: ["Livvic"],
+      serif: ["Cinzel"]
     }
   },
   variants: {},

@@ -1,6 +1,6 @@
 <template>
   <div class="font-sans">
-    <Nav />
+    <!-- <Nav /> -->
     <nuxt />
   </div>
 </template>
