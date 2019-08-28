@@ -51,31 +51,19 @@
 const slugifyModule = require("slugify");
 
 export default {
-  head() {
-    return {
-      title: "Finisterra - El renacimiento de Argentum Online - AO Java",
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content: "My custom description"
-        }
-      ]
-    };
-  },
-  async asyncData({ $axios }) {
-    try {
-      const posts = await $axios.$get(
-        "https://jsonplaceholder.typicode.com/posts"
-      );
+  // async asyncData({ $axios }) {
+  //   try {
+  //     const posts = await $axios.$get(
+  //       "https://jsonplaceholder.typicode.com/posts"
+  //     );
 
-      return {
-        posts
-      };
-    } catch (e) {
-      console.log(e);
-    }
-  },
+  //     return {
+  //       posts
+  //     };
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // },
   methods: {
     slugify(text) {
       return slugifyModule(text);
