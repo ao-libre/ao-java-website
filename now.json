@@ -6,5 +6,6 @@
       "use": "@nuxtjs/now-builder",
       "config": {}
     }
-  ]
+  ],
+  "scope": "aolibre"
 }
