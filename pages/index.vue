@@ -3,7 +3,7 @@
     <!-- <header id="hero" class="relative flex items-center justify-center -z-1">
       <h1 class="flex flex-col items-center text-center font-serif text-2xl tracking-widest -mt-32">
         <img src="../assets/logo-big.png" alt="logo Finisterra" />
-        EL RENACIMIENTO DE
+        MMO OPEN SOURCE BASADO EN
         <br />ARGENTUM ONLINE
       </h1>
       <div class="separador absolute bottom-0"></div>
@@ -21,7 +21,7 @@
       <div class="px-8 flex flex-col items-center text-center font-serif">
         <img src="../assets/logo-big.png" alt="logo Finisterra" />
         <h1 class="text-lg sm:text-2xl tracking-widest mt-2">
-          EL RENACER DE
+          MMO OPEN SOURCE BASADO EN
           <br />ARGENTUM ONLINE
         </h1>
         <p class="tracking-wide mt-4 text-lg">próximamente...</p>
