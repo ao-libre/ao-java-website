@@ -1,3 +1,5 @@
+const config = require("./.env.json");
+
 module.exports = {
   mode: "universal",
   head: {
@@ -11,8 +13,7 @@ module.exports = {
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Cinzel:400,700|Livvic&display=swap"
+        href: "https://fonts.googleapis.com/css?family=Cinzel:400,700|Alegreya+Sans&display=swap"
       }
     ],
     script: [{ src: "https://kit.fontawesome.com/63657e4863.js" }],
@@ -22,15 +23,20 @@ module.exports = {
   },
   loading: { color: "var(--primary)" },
   css: ["~/assets/css/tailwind.css"],
-  plugins: [],
+  plugins: ["~/plugins/contentful.js"],
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
+    "@nuxtjs/moment",
     "nuxt-purgecss"
   ],
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+  },
+  moment: {
+    defaultLocale: "es",
+    locales: ["es"]
   },
   build: {
     postcss: {
@@ -42,5 +48,9 @@ module.exports = {
   },
   purgeCSS: {
     mode: "postcss"
+  },
+  env: {
+    CTF_SPACE_ID: config.CTF_SPACE_ID,
+    CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN
   }
 };

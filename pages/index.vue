@@ -26,11 +26,7 @@
         </h1>
         <p class="tracking-wide mt-4 text-lg">próximamente...</p>
         <div class="mt-10 flex">
-          <a
-            href="https://github.com/ao-libre/ao-java"
-            target="_blank"
-            class="hover:text-primary mx-2"
-          >
+          <a href="https://github.com/ao-libre/ao-java" target="_blank" class="hover:text-primary mx-2">
             <svg aria-hidden="true" class="w-8" viewBox="0 0 496 512">
               <path
                 fill="currentColor"
@@ -38,11 +34,7 @@
               />
             </svg>
           </a>
-          <a
-            href="https://discordapp.com/invite/qCJPGbY"
-            target="_blank"
-            class="hover:text-primary mx-2"
-          >
+          <a href="https://discordapp.com/invite/qCJPGbY" target="_blank" class="hover:text-primary mx-2">
             <svg aria-hidden="true" class="w-8" viewBox="0 0 448 512">
               <path
                 fill="currentColor"
@@ -61,19 +53,9 @@
 const slugifyModule = require("slugify");
 
 export default {
-  // async asyncData({ $axios }) {
-  //   try {
-  //     const posts = await $axios.$get(
-  //       "https://jsonplaceholder.typicode.com/posts"
-  //     );
-
-  //     return {
-  //       posts
-  //     };
-  //   } catch (e) {
-  //     console.log(e);
-  //   }
-  // },
+  mounted() {
+    console.log(this.posts);
+  },
   methods: {
     slugify(text) {
       return slugifyModule(text);
@@ -126,12 +108,7 @@ h6 {
 .separador {
   width: 100%;
   height: 1px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    var(--primary),
-    transparent
-  );
+  background: linear-gradient(to right, transparent, var(--primary), transparent);
 }
 
 .-z-1 {

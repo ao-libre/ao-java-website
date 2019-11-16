@@ -1,6 +1,6 @@
 <template>
   <div class="font-sans">
-    <!-- <Nav /> -->
+    <Nav />
     <nuxt />
   </div>
 </template>
@@ -16,4 +16,7 @@ export default {
 </script>
 
 <style>
+body {
+  padding-top: 130px;
+}
 </style>

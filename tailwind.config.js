@@ -11,7 +11,7 @@ module.exports = {
       padding: "1rem"
     },
     fontFamily: {
-      sans: ["Livvic"],
+      sans: ["'Alegreya Sans'"],
       serif: ["Cinzel"]
     }
   },
