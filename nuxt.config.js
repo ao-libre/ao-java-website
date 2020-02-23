@@ -1,4 +1,4 @@
-const config = require("./.env.json");
+// const config = require("./.env.json");
 
 module.exports = {
   mode: "universal",
@@ -13,7 +13,8 @@ module.exports = {
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Cinzel:400,700|Alegreya+Sans&display=swap"
+        href:
+          "https://fonts.googleapis.com/css?family=Cinzel:400,700|Alegreya+Sans&display=swap"
       }
     ],
     script: [{ src: "https://kit.fontawesome.com/63657e4863.js" }],
@@ -50,7 +51,7 @@ module.exports = {
     mode: "postcss"
   },
   env: {
-    CTF_SPACE_ID: config.CTF_SPACE_ID,
-    CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN
+    // CTF_SPACE_ID: config.CTF_SPACE_ID,
+    // CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN
   }
 };
