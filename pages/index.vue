@@ -70,17 +70,17 @@
 </template>
 
 <script>
-const slugifyModule = require("slugify");
+// const slugifyModule = require("slugify");
 
 export default {
-  mounted() {
-    console.log(this.posts);
-  },
-  methods: {
-    slugify(text) {
-      return slugifyModule(text);
-    }
-  }
+  // mounted() {
+  //   console.log(this.posts);
+  // },
+  // methods: {
+  //   slugify(text) {
+  //     return slugifyModule(text);
+  //   }
+  // }
 };
 </script>
 

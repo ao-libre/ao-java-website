@@ -24,7 +24,7 @@ module.exports = {
   },
   loading: { color: "var(--primary)" },
   css: ["~/assets/css/tailwind.css"],
-  plugins: ["~/plugins/contentful.js"],
+  // plugins: ["~/plugins/contentful.js"],
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
