@@ -12,9 +12,9 @@
         <li>
           <nuxt-link to="/noticias">Noticias</nuxt-link>
         </li>
-        <li>
+        <!-- <li>
           <nuxt-link to="/aolibre">AO Libre</nuxt-link>
-        </li>
+        </li> -->
       </ul>
     </div>
   </nav>
