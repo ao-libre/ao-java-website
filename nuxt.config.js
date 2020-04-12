@@ -13,8 +13,7 @@ module.exports = {
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Cinzel:400,700|Alegreya+Sans&display=swap"
+        href: "https://fonts.googleapis.com/css?family=Cinzel:400,700|Alegreya+Sans&display=swap"
       }
     ],
     script: [{ src: "https://kit.fontawesome.com/63657e4863.js" }],
@@ -24,7 +23,7 @@ module.exports = {
   },
   loading: { color: "var(--primary)" },
   css: ["~/assets/css/tailwind.css"],
-  // plugins: ["~/plugins/contentful.js"],
+  plugins: ["~/plugins/contentful.js"],
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
@@ -45,13 +44,9 @@ module.exports = {
         tailwindcss: "tailwind.config.js"
       }
     },
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   },
   purgeCSS: {
     mode: "postcss"
-  },
-  env: {
-    // CTF_SPACE_ID: config.CTF_SPACE_ID,
-    // CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN
   }
 };

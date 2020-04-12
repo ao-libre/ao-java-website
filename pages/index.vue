@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen">
-    <!-- <header id="hero" class="relative flex items-center justify-center -z-1">
+    <header id="hero" class="relative flex items-center justify-center -z-1">
       <h1 class="flex flex-col items-center text-center font-serif text-2xl tracking-widest -mt-32">
         <img src="../assets/logo-big.png" alt="logo Finisterra" />
         MMO OPEN SOURCE BASADO EN
@@ -15,8 +15,8 @@
           <nuxt-link :to="`/noticias/${post.id}`" class="link">{{ post.title }}</nuxt-link>
         </div>
       </div>
-    </section>-->
-
+    </section>
+<!-- 
     <header id="hero" class="relative flex items-center justify-center">
       <div class="px-8 flex flex-col items-center text-center font-serif">
         <img src="../assets/logo-big.png" alt="logo Finisterra" />
@@ -65,22 +65,25 @@
         </div>
       </div>
       <div class="separador absolute bottom-0"></div>
-    </header>
+    </header> -->
   </div>
 </template>
 
 <script>
-// const slugifyModule = require("slugify");
-
 export default {
-  // mounted() {
-  //   console.log(this.posts);
-  // },
-  // methods: {
-  //   slugify(text) {
-  //     return slugifyModule(text);
-  //   }
-  // }
+  async asyncData({ app }) {
+    const posts = await app.$db.getEntries({
+      content_type: "post",
+      order: "-sys.createdAt"
+    });
+
+    return {
+      posts: posts.items
+    };
+  },
+  mounted() {
+    console.log(this.posts);
+  }
 };
 </script>
 
