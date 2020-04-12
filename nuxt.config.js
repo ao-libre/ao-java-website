@@ -1,5 +1,3 @@
-const config = require("./.env.json");
-
 module.exports = {
   mode: "universal",
   head: {
@@ -48,9 +46,5 @@ module.exports = {
   },
   purgeCSS: {
     mode: "postcss"
-  },
-  env: {
-    CTF_SPACE_ID: config.CTF_SPACE_ID,
-    CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN
   }
 };

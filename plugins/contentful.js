@@ -8,3 +8,4 @@ const dbInstance = contentful.createClient({
 export default ({ app }, inject) => {
   inject("db", dbInstance);
 };
+

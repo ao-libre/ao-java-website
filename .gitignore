@@ -84,3 +84,4 @@ dist
 sw.*
 
 .env.json
+.env.build
