@@ -1,4 +1,4 @@
-// const config = require("./.env.json");
+const config = require("./.env.json");
 
 module.exports = {
   mode: "universal",
@@ -24,7 +24,7 @@ module.exports = {
   },
   loading: { color: "var(--primary)" },
   css: ["~/assets/css/tailwind.css"],
-  // plugins: ["~/plugins/contentful.js"],
+  plugins: ["~/plugins/contentful.js"],
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
@@ -51,7 +51,7 @@ module.exports = {
     mode: "postcss"
   },
   env: {
-    // CTF_SPACE_ID: config.CTF_SPACE_ID,
-    // CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN
+    CTF_SPACE_ID: config.CTF_SPACE_ID,
+    CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN
   }
 };
