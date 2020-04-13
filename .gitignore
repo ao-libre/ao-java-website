@@ -85,3 +85,4 @@ sw.*
 
 .env.json
 .env.build
+.now
