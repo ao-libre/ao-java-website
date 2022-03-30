@@ -1,6 +1,6 @@
 # finisterra
 
-> Website for Finisterra  
+> Website for Finisterra
 
 ## Build Setup
 
