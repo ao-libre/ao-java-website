@@ -14,7 +14,7 @@
     "@contentful/rich-text-types": "^13.4.0",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/moment": "^1.4.0",
-    "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/pwa": "^3.3.5",
     "contentful": "^7.10.0",
     "contentful-rich-text-vue-renderer": "^1.1.2",
     "cross-env": "^5.2.0",
