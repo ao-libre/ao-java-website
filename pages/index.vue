@@ -24,6 +24,9 @@
           MMO OPEN SOURCE BASADO EN
           <br />ARGENTUM ONLINE
         </h1>
+        <div class="px-8 flex flex-col items-center text-center font-serif">
+          <script type="text/javascript" src="https://v3.esmsv.com/form/renderwidget/format/widget/AdministratorID/127793/FormID/1"></script>
+         </div>
         <p class="tracking-wide mt-4 text-lg">próximamente...</p>
         <div class="mt-10 flex">
           <a
